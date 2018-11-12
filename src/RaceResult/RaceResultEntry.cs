@@ -17,7 +17,7 @@ namespace RaceResult
 
         public decimal TotalAverageSpeed { get; }
 
-        public TimeSpan TimeAfterFirstDriverFinishes => TotalTime - _firstPlaceTotalTime;
+        public TimeSpan TimeAfterFirstPlace => TotalTime - _firstPlaceTotalTime;
 
         public int RemainingLaps => _firstPlaceCompletedLaps - CompletedLaps;
 
